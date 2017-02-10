@@ -5,9 +5,13 @@ import by.epam.tr.io.DataInput;
 import by.epam.tr.shape.Circle;
 
 
+import java.io.IOException;
+
+
+
 public class Task12 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		double radius;
 		

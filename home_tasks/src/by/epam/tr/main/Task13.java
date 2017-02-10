@@ -4,14 +4,12 @@ import by.epam.tr.io.DataOutput;
 import by.epam.tr.util.Calc;
 import by.epam.tr.io.DataInput;
 
-import java.io.FileNotFoundException;
-import java.io.UnsupportedEncodingException;
-
+import java.io.IOException;
 
 
 public class Task13 {
 
-	public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
+	public static void main(String[] args) throws IOException {
 
 		int value;
 		
@@ -29,11 +27,12 @@ public class Task13 {
 		
 
 		//--read/write from file--
-		DataInput inputConsole2 = new DataInput("file reading...", ".\\resource\\input13.txt" );
-		DataOutput outputConsole2 = new DataOutput("Result of calculation: ", ".\\resource\\output13.txt");
-		
+		DataInput inputConsole2 = new DataInput("file reading...", "resource\\input13.txt" );
 		value = inputConsole2.readInt();
+
 		value = Calc.multiplyDigits(value);
+
+		DataOutput outputConsole2 = new DataOutput("file writing...", "resource\\output13.txt");
 		outputConsole2.printInt(value);
 
 		inputConsole2.close();

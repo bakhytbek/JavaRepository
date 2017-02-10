@@ -17,7 +17,7 @@ public class DataOutput {
 	public DataOutput(String banner, String fileOutputName) throws FileNotFoundException, UnsupportedEncodingException {
 		this.banner = banner;
 		fileOutput = new PrintWriter(fileOutputName, "UTF-8");
-		fileOutput.write(this.banner);
+		System.out.println(this.banner);
 	}
 
 	public void printInt(int value) {

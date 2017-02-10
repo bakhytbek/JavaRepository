@@ -1,14 +1,15 @@
 package by.epam.tr.io;
 
-import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class DataInput {
 
 	private Scanner scanner;
 	private String banner;
-	private File fileInput;
+	private FileReader fileInput;
 
 	public DataInput(String banner) {
 		this.banner = banner;
@@ -18,7 +19,7 @@ public class DataInput {
 
 	public DataInput(String banner, String fileInputName) throws FileNotFoundException {
 		this.banner = banner;
-		fileInput = new File(fileInputName);
+		fileInput = new FileReader(fileInputName);
 		scanner = new Scanner(fileInput);
 		System.out.println(this.banner);
 	}
@@ -51,7 +52,10 @@ public class DataInput {
 		return result;
 	}
 
-	public void close() {
+	public void close() throws IOException {
+		if (fileInput != null) {
+			fileInput.close();
+		}
 		scanner.close();
 	}
 
