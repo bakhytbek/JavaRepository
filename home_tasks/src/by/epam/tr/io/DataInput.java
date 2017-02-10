@@ -5,18 +5,21 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
+//Input data from console or file
 public class DataInput {
 
 	private Scanner scanner;
 	private String banner;
 	private FileReader fileInput;
 
+	//Input data from console 
 	public DataInput(String banner) {
 		this.banner = banner;
 		scanner = new Scanner(System.in);
 		System.out.println(this.banner);
 	}
 
+	//Input data from file
 	public DataInput(String banner, String fileInputName) throws FileNotFoundException {
 		this.banner = banner;
 		fileInput = new FileReader(fileInputName);

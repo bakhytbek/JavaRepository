@@ -13,7 +13,7 @@ public class Task13 {
 
 		int value;
 		
-		//--read/write from console--
+		//--read/write from/to console--
 		DataInput inputConsole = new DataInput("Please enter interger number: ");
 		
 		value = inputConsole.readInt();
@@ -26,7 +26,7 @@ public class Task13 {
 		outputConsole.close();
 		
 
-		//--read/write from file--
+		//--read/write from/to file--
 		DataInput inputConsole2 = new DataInput("file reading...", "resource\\input13.txt" );
 		value = inputConsole2.readInt();
 
