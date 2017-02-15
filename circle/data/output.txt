@@ -1,0 +1,8 @@
+Wrong circle radius value
+Circle radius = 6.0000; Circle area = 113.0973; Circle perimeter = 37.6991
+Circle radius = 9.0000; Circle area = 254.4690; Circle perimeter = 56.5487
+Circle radius = 445.0000; Circle area = 622113.8852; Circle perimeter = 2796.0175
+Wrong circle radius value
+Circle radius = 32.0000; Circle area = 3216.9909; Circle perimeter = 201.0619
+Circle radius = 56.5400; Circle area = 10042.9542; Circle perimeter = 355.2513
+Wrong circle radius value
