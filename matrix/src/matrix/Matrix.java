@@ -3,6 +3,7 @@ package matrix;
 
 //Дана последовательность действительных чисел а1 а2 ,..., аn. Выяснить, будет ли она возрастающей.
 
+
 public class Matrix {
 
 	public static void main(String[] args) {
