@@ -26,9 +26,9 @@ public class Matrix {
 		}
 		
 		if (flag) {
-			System.out.println("Последовательность возрастающая");
+			System.out.println("Последовательность возрастающая.");
 		} else {
-			System.out.println("Последовательность невозрастающая");
+			System.out.println("Последовательность невозрастающая.");
 		}  
 	}
 
