@@ -23,12 +23,12 @@ public class DataOutput {
 
 		for (int i = 0; i < circles.size(); i++) {
 			if (circles.get(i) != null) {
-				fileOutput.println(String.format(Message.MsgResultOutput
+				fileOutput.println(String.format(Message.MSG_RESULT_OUTPUT
 						, circles.get(i).getRadius()
 						, circles.get(i).getArea()
 						, circles.get(i).getPerimeter()));
 			} else {
-				fileOutput.println(Message.MsgWrongValue);
+				fileOutput.println(Message.MSG_RESULT_OUTPUT);
 			}    
 		}
 	}

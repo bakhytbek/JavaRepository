@@ -23,7 +23,7 @@ public class DataOutput {
 			if (statuses.get(i)) {
 				fileOutput.println(Long.toString(values.get(i)));
 			} else {
-				fileOutput.println(Message.MsgWrongNumber);
+				fileOutput.println(Message.MSG_WRONG_NUMBER);
 			}    
 		}
 	}
@@ -34,7 +34,7 @@ public class DataOutput {
 			if (statuses.get(i)) {
 				fileOutput.println(String.format("%.4f", values.get(i)));
 			} else {
-				fileOutput.println(Message.MsgWrongNumber);
+				fileOutput.println(Message.MSG_WRONG_NUMBER);
 			}    
 		}
 	}
