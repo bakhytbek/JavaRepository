@@ -1,9 +1,9 @@
 package by.epam.tr.shape;
 
-public class Circle {  
-	 
-    private double radius; 
-	private double area; 
+public class Circle {
+	
+	private double radius;
+	private double area;
 	private double perimeter; 
 
 
