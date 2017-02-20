@@ -19,7 +19,7 @@ public class HomeTask {
 		DataInput dataInput = new DataInput();
 		dataInput.readCircle("data\\input.txt", circles);
 		
-		//--multiply digits
+		//--calculate area and perimiter
 		Calc.calcCircleArea(circles);
 		Calc.calcCirclePerimeter(circles);
 		
