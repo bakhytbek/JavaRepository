@@ -7,46 +7,42 @@ import java.util.ArrayList;
 
 import by.epam.tr.shape.Circle;
 
-import java.io.FileNotFoundException;
-
 //Input data from file
 public class DataInput {
 
-	private BufferedReader fileInput;
-
-	public DataInput(String fileName) throws FileNotFoundException {
-
-		fileInput = new BufferedReader(new FileReader(fileName));
-
-	}
-
-	public void readCircle(ArrayList<Circle> circles) throws IOException {
+	public void readCircle(String fileName, ArrayList<Circle> circles) throws IOException {
 
 		String value;
 		double radius;
-		
-		while ((value = fileInput.readLine()) != null) {
+		BufferedReader fileInput = null;
+
+		try {
+
+			fileInput = new BufferedReader(new FileReader(fileName));		
 			
-			try {
-				radius = Double.parseDouble(value);
-				if (radius > 0) {
-					circles.add(new Circle(radius));
-				} else {
+			while ((value = fileInput.readLine()) != null) {
+				
+				try {
+					radius = Double.parseDouble(value);
+					if (radius > 0) {
+						circles.add(new Circle(radius));
+					} else {
+						circles.add(null);
+					} 
+				}
+				catch (NumberFormatException e) {
 					circles.add(null);
-				} 
+				}
+				
 			}
-			catch (NumberFormatException e) {
-				circles.add(null);
+		} 
+		finally {
+			if (fileInput != null) {
+				fileInput.close();
 			}
-			
 		}
+		
 	}
 	
-	
-	public void close() throws IOException {
-		if (fileInput != null) {
-			fileInput.close();
-		}
-	}
 
 }

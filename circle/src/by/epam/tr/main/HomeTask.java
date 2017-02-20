@@ -16,18 +16,16 @@ public class HomeTask {
 		ArrayList<Circle> circles = new ArrayList<Circle>();
 		
 		//--read data from file to array
-		DataInput dataInput = new DataInput("data\\input.txt" );
-		dataInput.readCircle(circles);
-		dataInput.close();
+		DataInput dataInput = new DataInput();
+		dataInput.readCircle("data\\input.txt", circles);
 		
 		//--multiply digits
 		Calc.calcCircleArea(circles);
 		Calc.calcCirclePerimeter(circles);
 		
 		//--print data from array to file
-		DataOutput dataOutput = new DataOutput("data\\output.txt" ); 
-		dataOutput.printCircle(circles);
-		dataOutput.close();
+		DataOutput dataOutput = new DataOutput();
+		dataOutput.printCircle("data\\output.txt", circles);
 		
 		
 		

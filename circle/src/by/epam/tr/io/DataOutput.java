@@ -12,32 +12,33 @@ import by.epam.tr.shape.Circle;
 //Print data to file
 public class DataOutput {
 
-	private PrintWriter fileOutput;
+	public void printCircle(String fileName, ArrayList<Circle> circles) throws FileNotFoundException, UnsupportedEncodingException {
 
-	public DataOutput(String fileName) throws FileNotFoundException, UnsupportedEncodingException {
-		fileOutput = new PrintWriter(fileName, "UTF-8");
-	}
+		PrintWriter fileOutput = null;
+		
+		try {
+			fileOutput = new PrintWriter(fileName, "UTF-8");
+			
+			for (int i = 0; i < circles.size(); i++) {
+				if (circles.get(i) != null) {
+					fileOutput.println(String.format(Message.MSG_RESULT_OUTPUT
+							, circles.get(i).getRadius()
+							, circles.get(i).getArea()
+							, circles.get(i).getPerimeter()));
+				} else {
+					fileOutput.println(Message.MSG_RESULT_OUTPUT);
+				}    
+			}
 
-
-	public void printCircle(ArrayList<Circle> circles) {
-
-		for (int i = 0; i < circles.size(); i++) {
-			if (circles.get(i) != null) {
-				fileOutput.println(String.format(Message.MSG_RESULT_OUTPUT
-						, circles.get(i).getRadius()
-						, circles.get(i).getArea()
-						, circles.get(i).getPerimeter()));
-			} else {
-				fileOutput.println(Message.MSG_RESULT_OUTPUT);
-			}    
 		}
-	}
-
-
-	public void close() {
-		if (fileOutput != null) {
-			fileOutput.close();
+		finally {
+			if (fileOutput != null) {
+				fileOutput.close();
+			}
 		}
+		
 	}
+
+
 
 }
