@@ -18,25 +18,42 @@ public class Main {
 		Train train = new Train();
 		train.setWagons(DataInput.readTrainWagons("data\\train1.txt", wagonPark.getWagons()));
 		
+		//train summaring
+		System.out.println("===================================");
+		System.out.println("======TOTAL BOARDED PASSENGERS=====");
+		System.out.println("===================================");
+
+		train.getWagons().forEach((wagonId, wagon)->{Action.sumBoardedPassenger(wagon.getBoardedPassenger());});
+		System.out.println(Action.getSubTotal());
+		
+		
+		
 
 		//train ordering
 		System.out.println("===================================");
 		System.out.println("====ORDER BY NAME ASC, ID DESC=====");
 		System.out.println("===================================");
+		
 		Action.orderByNameId(train.getWagons()).forEach((wagonId, wagon)->{System.out.println(wagonId + " : " + wagon.getName());});
-
+		
+		
+		
 
 		//train filtering
 		System.out.println("===================================");
 		System.out.println("==FILTER: BOARDED_PASSENGERS > 10==");
 		System.out.println("===================================");
+
 		Action.filterBoardedPassenger(train.getWagons(), 10).forEach((wagonId, wagon)->{System.out.println(wagonId + " : " + wagon.getName() + " (" + wagon.getBoardedPassenger() + ")");});
 
+		
+		
 		
 		//train filtering
 		System.out.println("===================================");
 		System.out.println("=======FILTER: LOCOMOTIVE==========");
 		System.out.println("===================================");
+		
 		Action.filterLocomotive(train.getWagons()).forEach((wagonId, wagon)->{System.out.println(wagonId + " : " + wagon.getName() + " (" + wagon.isLocomotive() + ")");});
 		
 	

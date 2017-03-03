@@ -10,6 +10,17 @@ import by.epam.tr.train.Wagon;
 
 public class Action {
 	
+	private static int subTotal;
+	
+	public static void sumBoardedPassenger(int boardedPassengers) {
+		subTotal = subTotal + boardedPassengers;
+	}
+	
+	public static int getSubTotal() {
+		return subTotal;
+	}
+
+
 	public static Map<Integer, Wagon> orderByNameId (Map <Integer, Wagon> map) {
 
 		Comparator<Entry<Integer, Wagon>> byName = (e1,e2)-> e1.getValue().getName().compareTo(e2.getValue().getName());
