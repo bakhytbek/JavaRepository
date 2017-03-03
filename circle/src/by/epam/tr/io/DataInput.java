@@ -35,7 +35,11 @@ public class DataInput {
 				}
 				
 			}
+			 
 		} 
+		
+		 
+				
 		finally {
 			if (fileInput != null) {
 				fileInput.close();

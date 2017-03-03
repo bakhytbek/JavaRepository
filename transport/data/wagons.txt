@@ -1,0 +1,38 @@
+//Lines starting with "L" are Locomotives
+//Lines starting with "P" are Passenger wagons
+//All other lines will be ignored
+//"ID" field value should be unique
+//-----------------------------------------
+//Locomotives
+//CODE,ID,NAME,BUILDER,BUID_DATE,WHEELSET_WIDTH,WHEELSET_NUMBER,MAXIMUM_SPEED,ENGINE_TYPE,ENGINE_POWER
+//-----------------------------------------
+L,1,2TE116,Luhanskteplovoz,10/03/1990,1520,6,100,Diesel,6035
+L,2,ES44DC,GE Transportation,30/11/2010,1520,8,170,Diesel_electric,6200
+L,3,ES44DC,GE Transportation,25/12/2010,1520,8,170,Diesel_electric,6200
+L,4,ES44AC,GE Transportation,17/05/2012,1520,8,220,Diesel_electric,7500
+L,5,ES44DB,GE Transportation,13/12/2009,1435,8,170,Diesel_electric,6200
+
+//-----------------------------------------
+//Passenger wagons
+//CODE,ID,NAME,BUILDER,BUID_DATE,WHEELSET_WIDTH,WHEELSET_NUMBER,MAX_SPEED,SERVICE_TYPE,CAPACITY_PASSENGER,CAPACITY_LUGGAGE
+//-----------------------------------------
+P,10,Talgo Tourist,Patentes Talgo S.L.,10/01/2015,1520,2,200,Tourist,18,360
+P,11,Talgo Tourist,Patentes Talgo S.L.,10/02/2015,1520,2,200,Tourist,18,360
+P,13,Talgo Tourist,Patentes Talgo S.L.,10/03/2015,1520,2,200,Tourist,18,360
+P,14,Talgo Tourist,Patentes Talgo S.L.,10/04/2015,1520,2,200,Tourist,18,360
+P,15,Talgo Tourist,Patentes Talgo S.L.,10/05/2015,1435,2,200,Tourist,18,360
+P,16,Talgo Tourist,Patentes Talgo S.L.,10/06/2015,1435,2,200,Tourist,18,360
+P,17,Talgo Business,Patentes Talgo S.L.,31/01/2015,1520,2,220,Business,12,480
+P,18,Talgo Business,Patentes Talgo S.L.,30/01/2015,1520,2,220,Business,12,480
+P,19,Talgo Business,Patentes Talgo S.L.,29/01/2015,1520,2,220,Business,12,480
+P,20,Talgo Business,Patentes Talgo S.L.,31/01/2015,1435,2,1435,Business,12,480
+P,21,Talgo Business,Patentes Talgo S.L.,30/01/2015,1520,2,1435,Business,12,480
+P,22,Talgo Grand,Patentes Talgo S.L.,30/11/2015,1520,2,220,Grand,10,500
+P,23,Talgo Grand,Patentes Talgo S.L.,20/11/2015,1435,2,220,Grand,10,500
+P,24,Talgo Grand,Patentes Talgo S.L.,10/11/2015,1520,2,220,Grand,10,500
+P,25,Talgo Grand,Patentes Talgo S.L.,10/10/2015,1520,2,220,Grand,10,500
+P,26,Talgo Grand,Patentes Talgo S.L.,28/02/2017,1520,2,220,Grand,10,500
+P,27,Talgo Grand,Patentes Talgo S.L.,28/03/2017,1520,2,220,Grand,10,500
+P,28,Talgo Grand,Patentes Talgo S.L.,28/04/2017,1520,2,220,Grand,10,500
+P,29,Talgo Grand,Patentes Talgo S.L.,28/04/2017,1435,2,220,Grand,10,500
+P,aa,Talgo Grand,Patentes Talgo S.L.,28/04/2017,1435,2,220,Grand,10,500
