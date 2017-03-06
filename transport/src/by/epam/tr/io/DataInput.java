@@ -167,7 +167,7 @@ public class DataInput {
 	private static void addTrainWagon(String line, HashMap<Integer, Wagon> wagons, HashMap<Integer, Wagon> trainWagons) {
 
 		try {
-			if (!line.equals("")) {
+			if (!line.isEmpty()) {
 
 				TrainFormat trainFormat = parseTrainFormat(line);
 				
