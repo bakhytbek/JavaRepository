@@ -8,7 +8,7 @@ public class Setting {
 	public static final String PREFIX_LOCOMOTIVE = "L";
 
 	public static final String DELIMITER_FIELD = ",";
-	public static final String FORMAT_DATE = "dd.MM.yyyy";
+	public static final String FORMAT_DATE = "dd/MM/yyyy";
 	
 
 	public static final String LOG_ERROR_FILE_READ = "Can not read from file: \"%s\"";

@@ -23,8 +23,7 @@ public class Main {
 		System.out.println("======TOTAL BOARDED PASSENGERS=====");
 		System.out.println("===================================");
 
-		train.getWagons().forEach((wagonId, wagon)->{Action.sumBoardedPassenger(wagon.getBoardedPassenger());});
-		System.out.println(Action.getSubTotal());
+		System.out.println(Action.sumBoardedPassenger(train.getWagons()));
 		
 		
 		

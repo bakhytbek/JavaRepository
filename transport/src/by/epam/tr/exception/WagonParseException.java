@@ -1,17 +1,17 @@
 package by.epam.tr.exception;
 
-public class ParseException extends Exception {
+public class WagonParseException extends Exception {
 	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public ParseException(String message) {
+	public WagonParseException(String message) {
 		super (message);
 	}
 	
-	public ParseException(String message, Throwable exception) {
+	public WagonParseException(String message, Throwable exception) {
 		super (message, exception);
 	}
 }
