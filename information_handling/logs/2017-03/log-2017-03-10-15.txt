@@ -1,0 +1,10 @@
+2017-03-10 15:37:14 [main] INFO  by.epam.tr.io.DataInput - ***********************************************   TEXT   ***********************************************
+2017-03-10 15:37:14 [main] INFO  by.epam.tr.io.DataInput - 	I has survived not only for five centures, but also the leap into, typesetting. It was popularised.
+It is a long!
+	It is a?
+  Bye.
+2017-03-10 15:55:15 [main] INFO  by.epam.tr.io.DataInput - 
+2017-03-10 15:55:32 [main] INFO  by.epam.tr.io.DataInput - 
+2017-03-10 15:56:23 [main] INFO  by.epam.tr.io.DataInput - 
+2017-03-10 15:56:55 [main] INFO  by.epam.tr.io.DataInput - 
+2017-03-10 15:57:23 [main] INFO  by.epam.tr.io.DataInput - 

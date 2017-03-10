@@ -1,0 +1,100 @@
+2017-03-06 12:49:08 [main] ERROR by.epam.tr.io.DataInput - Invalid wagon format; line: "P,aa,Talgo Grand,Patentes Talgo S.L.,28/04/2017,1435,2,220,Grand,10,500"
+2017-03-06 12:51:52 [main] ERROR by.epam.tr.io.DataInput - Invalid wagon format; line: "P,aa,Talgo Grand,Patentes Talgo S.L.,28/04/2017,1435,2,220,Grand,10,500"
+2017-03-06 12:53:58 [main] ERROR by.epam.tr.io.DataInput - Invalid wagon format; line: "P,aa,Talgo Grand,Patentes Talgo S.L.,28/04/2017,1435,2,220,Grand,10,500"
+2017-03-06 12:53:58 [main] ERROR by.epam.tr.io.DataInput - Invalid train format; line: "zz,15,100"
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 1 - 2TE116
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 2 - ES44DC
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 3 - ES44DC
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 4 - ES44AC
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 5 - ES44DB
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 10 - Talgo Tourist
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 11 - Talgo Tourist
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 13 - Talgo Tourist
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 14 - Talgo Tourist
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 15 - Talgo Tourist
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 16 - Talgo Tourist
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 17 - Talgo Business
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 18 - Talgo Business
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 19 - Talgo Business
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 20 - Talgo Business
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 21 - Talgo Business
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 22 - Talgo Grand
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 23 - Talgo Grand
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 24 - Talgo Grand
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 25 - Talgo Grand
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 26 - Talgo Grand
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 27 - Talgo Grand
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 28 - Talgo Grand
+2017-03-06 12:55:40 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 29 - Talgo Grand
+2017-03-06 12:55:40 [main] ERROR by.epam.tr.io.DataInput - Invalid wagon format; line: "P,aa,Talgo Grand,Patentes Talgo S.L.,28/04/2017,1435,2,220,Grand,10,500"
+2017-03-06 12:55:40 [main] ERROR by.epam.tr.io.DataInput - Invalid train format; line: "zz,15,100"
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 1 - 2TE116
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 2 - ES44DC
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 3 - ES44DC
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 4 - ES44AC
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 5 - ES44DB
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 10 - Talgo Tourist
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 11 - Talgo Tourist
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 13 - Talgo Tourist
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 14 - Talgo Tourist
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 15 - Talgo Tourist
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 16 - Talgo Tourist
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 17 - Talgo Business
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 18 - Talgo Business
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 19 - Talgo Business
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 20 - Talgo Business
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 21 - Talgo Business
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 22 - Talgo Grand
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 23 - Talgo Grand
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 24 - Talgo Grand
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 25 - Talgo Grand
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 26 - Talgo Grand
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 27 - Talgo Grand
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 28 - Talgo Grand
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 29 - Talgo Grand
+2017-03-06 12:58:19 [main] ERROR by.epam.tr.io.DataInput - Invalid wagon format; line: "P,aa,Talgo Grand,Patentes Talgo S.L.,28/04/2017,1435,2,220,Grand,10,500"
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Train: 3 - ES44DC
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Train: 25 - Talgo Grand
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Train: 23 - Talgo Grand
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Train: 11 - Talgo Tourist
+2017-03-06 12:58:19 [main] WARN  by.epam.tr.io.DataInput - Can not find wagon; line: "12,4,100"
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Train: 18 - Talgo Business
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Train: 14 - Talgo Tourist
+2017-03-06 12:58:19 [main] INFO  by.epam.tr.io.DataInput - Train: 13 - Talgo Tourist
+2017-03-06 12:58:19 [main] WARN  by.epam.tr.io.DataInput - Wagon is already added to train; line: "13,21,100"
+2017-03-06 12:58:19 [main] ERROR by.epam.tr.io.DataInput - Invalid train format; line: "zz,15,100"
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 1 - 2TE116
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 2 - ES44DC
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 3 - ES44DC
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 4 - ES44AC
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 5 - ES44DB
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 10 - Talgo Tourist
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 11 - Talgo Tourist
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 13 - Talgo Tourist
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 14 - Talgo Tourist
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 15 - Talgo Tourist
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 16 - Talgo Tourist
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 17 - Talgo Business
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 18 - Talgo Business
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 19 - Talgo Business
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 20 - Talgo Business
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 21 - Talgo Business
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 22 - Talgo Grand
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 23 - Talgo Grand
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 24 - Talgo Grand
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 25 - Talgo Grand
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 26 - Talgo Grand
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 27 - Talgo Grand
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 28 - Talgo Grand
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Wagon Park: 29 - Talgo Grand
+2017-03-06 12:59:18 [main] ERROR by.epam.tr.io.DataInput - Invalid wagon format; line: "P,aa,Talgo Grand,Patentes Talgo S.L.,28/04/2017,1435,2,220,Grand,10,500"
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Train: 3 - ES44DC
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Train: 25 - Talgo Grand
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Train: 23 - Talgo Grand
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Train: 11 - Talgo Tourist
+2017-03-06 12:59:18 [main] ERROR by.epam.tr.io.DataInput - Can not find wagon; line: "12,4,100"
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Train: 18 - Talgo Business
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Train: 14 - Talgo Tourist
+2017-03-06 12:59:18 [main] INFO  by.epam.tr.io.DataInput - Train: 13 - Talgo Tourist
+2017-03-06 12:59:18 [main] ERROR by.epam.tr.io.DataInput - Wagon is already added to train; line: "13,21,100"
+2017-03-06 12:59:18 [main] ERROR by.epam.tr.io.DataInput - Invalid train format; line: "zz,15,100"

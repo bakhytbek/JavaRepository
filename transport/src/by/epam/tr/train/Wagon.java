@@ -88,11 +88,7 @@ public class Wagon {
 	}
 	
 	public Boolean isLocomotive() {
-		if (this instanceof Locomotive) {
-			return true;
-		} else {
-			return false;
-		}
+		return (this instanceof Locomotive);
 	}
 	
 	public int getBoardedPassenger() {
