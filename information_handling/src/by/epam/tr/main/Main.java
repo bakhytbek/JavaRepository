@@ -42,7 +42,7 @@ public class Main {
 		paragraph_id[0] = 0;
 		sentence_id[0] = 0;
 		
-		System.out.println("************************************************   LEXEMES  *******************************************");
+		logger.info("************************************************   LEXEMES  *******************************************");
 		text.getChild().forEach(paragraph->{paragraph_id[0]++; paragraph.getChild()
 			           .forEach(sentence->{sentence_id[0]++; sentence.getChild()
 			           .forEach(lexeme->{logger.info("Paragraph_id=" + String.valueOf(paragraph_id[0]) +
