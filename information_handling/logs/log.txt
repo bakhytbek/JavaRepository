@@ -23,6 +23,7 @@ SENTENCE_ID=6 "	It is a?"
 SENTENCE_ID=7 "
 "
 SENTENCE_ID=8 "  Bye."
+************************************************   LEXEMES  *******************************************
 Paragraph_id=1, Sentence_id=1, Lexeme_id=1: "	I,	 " [I]
 Paragraph_id=1, Sentence_id=1, Lexeme_id=2: "has " [has]
 Paragraph_id=1, Sentence_id=1, Lexeme_id=3: "survived " [survived]
