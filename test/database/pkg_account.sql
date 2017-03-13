@@ -13,7 +13,7 @@ connect db@orcl10
 --ORCL10---------------------------
 -----------------------------------
 
-create database link TO_ORCL12 connect to DB identified by "1" using 'EPBYMINW6854:1521/ORCL'
+create database link TO_ORCL12 connect to DB identified by "1" using 'EPBYMINW6854:1521/ORCL';
 
 
 create table ACCOUNT_FROM (account_id int primary key, balance number(12,2) not null);
