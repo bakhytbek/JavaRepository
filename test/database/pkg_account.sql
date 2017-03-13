@@ -13,8 +13,8 @@ end pkg_account;
 
 create or replace package body pkg_account is
 
-  --create table ACCOUNT_FROM (account_id int primary key, balance number(12,2));
-  --create table ACCOUNT_TO@orcl12 (account_id int primary key, balance number(12,2));
+  --create table ACCOUNT_FROM (account_id int primary key, balance number(12,2) not null);
+  --create table ACCOUNT_TO@orcl12 (account_id int primary key, balance number(12,2) not null);
 
   procedure transfer_balance(in_account_id int, in_amount number)
   is

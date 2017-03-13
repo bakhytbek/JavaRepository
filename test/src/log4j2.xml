@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<Configuration status = "WARN">
+        <Properties>
+            <property name="pattern">%msg%n</property>
+            <property name="pattern_console">%msg%n</property>
+        </Properties>
+		<Appenders>
+			<Console name="Console" target="SYSTEM_OUT">
+				<PatternLayout pattern="${pattern_console}"/>
+			</Console>
+
+  	   <File name="File" fileName="logs/log.txt" immediateFlush="false" append="false">
+               <PatternLayout pattern="${pattern}"/>
+            </File>
+
+		</Appenders>
+		
+		<Loggers>
+			<Root level = "debug">
+				<Appender-ref ref = "Console" level = "debug"/>
+                <Appender-ref ref = "File" level = "debug"/>
+			</Root>
+		</Loggers>
+	</Configuration>
