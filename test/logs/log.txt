@@ -1,0 +1,11 @@
+2017-02-17 15:29:48 [main] INFO  Formula - this first log
+2017-02-17 15:30:24 [main] INFO  Main - this first log
+2017-02-17 15:30:56 [main] INFO  Formula - this first log
+2017-02-17 15:32:27 [main] INFO  Formula - this first le4w6764574og
+2017-02-17 15:37:47 [main] INFO  Formula - this first log
+2017-02-17 15:42:47 [main] INFO  Main - this first log
+2017-02-17 15:44:09 [main] INFO  Main - this first log
+2017-02-17 15:44:37 [main] INFO  Main - this first log
+2017-02-17 15:49:17 [main] INFO  Main - this first log
+2017-02-17 15:50:19 [main] INFO  Main - this first log
+2017-02-17 15:50:52 [main] INFO  Main - this first log
