@@ -38,6 +38,7 @@ create or replace package body pkg_account is
   is
     v_balance number(12,2);    
   begin
+    --lets try to block row (by account_id) on sender side	
     begin
       select f.balance
         into v_balance
@@ -49,20 +50,23 @@ create or replace package body pkg_account is
          raise_application_error(-20001, 'Can not find account_id = "'||in_account_id||'" on sender side.');
      end;   
       
+    --lets check balance  
     if (v_balance < in_amount)  then
       raise_application_error(-20002, 'Not enough balance on account_id = "'||in_account_id||'" on sender side.');
     end if;             
     
+    
+    --lets try to block row (by account_id) on receiver side (to prevent row delete)
     begin
       select f.balance
         into v_balance 
         from db.account_to@to_orcl12 f
         where f.account_id = in_account_id
         for update;
-     exception 
+    exception 
        when no_data_found then 
          raise_application_error(-20003, 'Can not find account_id = "'||in_account_id||'" on receiver side.');
-     end;   
+    end;   
 
     --Transfer balance
     update db.account_from f  
@@ -73,10 +77,12 @@ create or replace package body pkg_account is
        set f.balance = f.balance + in_amount 
      where f.account_id = in_account_id;              
     
+    --commit on both side if everything is OK
     commit;
     
     exception 
       when others then
+        --unlock rows and rollback if something is wrong
         rollback;
         raise;  
   end;       

@@ -29,7 +29,7 @@ public class Main {
 		
 		//print paragraph
 		logger.info("***********************************************   PARAGRAPHS  *******************************************");
-		text.getChild().forEach(paragraph->{logger.info("PARAGRAH_ID=" + String.valueOf(++paragraph_id[0]) + " \""  + paragraph + "\"") ;});
+		text.getChild().forEach(paragraph->logger.info("PARAGRAH_ID=" + String.valueOf(++paragraph_id[0]) + " \""  + paragraph + "\"") );
 		
 
 		//print sentence

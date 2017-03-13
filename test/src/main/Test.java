@@ -24,8 +24,8 @@ public class Test {
 			String command = "{call DB.PKG_ACCOUNT.TRANSFER_BALANCE(?,?)}";
 			CallableStatement cstmt = con.prepareCall(command);
 			
-			int account_id = 1;
-			double money = 50.5d;
+			int account_id = 100;
+			double money = 10.5d;
 			
 			cstmt.setInt(1, account_id);
 			cstmt.setDouble(2, money);
