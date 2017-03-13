@@ -32,7 +32,7 @@ public class Test {
 			
 			cstmt.execute();
 			logger.info("Money successfully transfered.");
-			cstmt.close();
+			con.close();
 
 		} catch (Exception e) {
 			logger.error(e.getMessage());
