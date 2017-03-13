@@ -9,7 +9,7 @@
 				<PatternLayout pattern="${pattern_console}"/>
 			</Console>
 
-  	   <File name="File" fileName="logs/log.txt" immediateFlush="false" append="false">
+  	   <File name="File" fileName="logs/log.txt" immediateFlush="false" append="true">
                <PatternLayout pattern="${pattern}"/>
             </File>
 
