@@ -21,8 +21,8 @@ public class Action {
 				 (text.getChild().get(0).getChild().get(0) instanceof Lexeme)) {
 			
 			//paragraph
-			text.getChild().forEach(sentence-> {sentence.getChild()
-						   .forEach(lexeme-> {result[0] = result[0] + ((Lexeme)lexeme).isWord();});});
+			text.getChild().forEach(sentence-> sentence.getChild()
+						   .forEach(lexeme-> {result[0] = result[0] + ((Lexeme)lexeme).isWord();}));
 		}
 		else if ((text.getChild() !=null) && 
 				(text.getChild().get(0).getChild()  !=null) &&
@@ -30,9 +30,9 @@ public class Action {
 				(text.getChild().get(0).getChild().get(0).getChild().get(0) instanceof Lexeme)) {
 		
 			//text
-			text.getChild().forEach(paragraph-> {paragraph.getChild()
-				.forEach(sentence-> {sentence.getChild()
-				.forEach(lexeme-> {result[0] = result[0] + ((Lexeme)lexeme).isWord();});});});
+			text.getChild().forEach(paragraph-> paragraph.getChild()
+				.forEach(sentence-> sentence.getChild()
+				.forEach(lexeme-> {result[0] = result[0] + ((Lexeme)lexeme).isWord();})));
 		}
 				 
 		return result[0];
@@ -55,8 +55,8 @@ public class Action {
 				 (text.getChild().get(0).getChild().get(0) instanceof Lexeme)) {
 			
 			//paragraph
-			text.getChild().forEach(sentence-> {
-				sentence.getChild().forEach(lexeme-> {if (((Lexeme)lexeme).isWord() == 1) {result.add(String.valueOf(sentence.getUniqueId()));} ;});});
+			text.getChild().forEach(sentence-> 
+				sentence.getChild().forEach(lexeme-> {if (((Lexeme)lexeme).isWord() == 1) result.add(String.valueOf(sentence.getUniqueId()));}));
 		}
 		else if ((text.getChild() !=null) && 
 				(text.getChild().get(0).getChild()  !=null) &&
@@ -64,9 +64,9 @@ public class Action {
 				(text.getChild().get(0).getChild().get(0).getChild().get(0) instanceof Lexeme)) {
 		
 			//text
-			text.getChild().forEach(paragraph-> {paragraph.getChild()
-				.forEach(sentence-> {sentence.getChild()
-				.forEach(lexeme-> {if (((Lexeme)lexeme).isWord() == 1) {result.add(String.valueOf(sentence.getUniqueId()));} ;});});;});
+			text.getChild().forEach(paragraph-> paragraph.getChild()
+				.forEach(sentence-> sentence.getChild()
+				.forEach(lexeme-> {if (((Lexeme)lexeme).isWord() == 1) result.add(String.valueOf(sentence.getUniqueId()));})));
 		}
 				 
 		return result.size();

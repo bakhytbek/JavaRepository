@@ -18,9 +18,9 @@ public class Main {
 		CompositeText text = (CompositeText) new TextParser().parse(DataInput.readFile("data\\text1.txt"));
 
 		//should be mutable variable
-		int[] paragraph_id = {0};
-		int[] sentence_id = {0};
-		int[] lexeme_id = {0};
+		int[] paragraphId = {0};
+		int[] sentenceId = {0};
+		int[] lexemeId = {0};
 
 		
 		//print text
@@ -29,27 +29,27 @@ public class Main {
 		
 		//print paragraph
 		logger.info("***********************************************   PARAGRAPHS  *******************************************");
-		text.getChild().forEach(paragraph->logger.info("PARAGRAH_ID=" + String.valueOf(++paragraph_id[0]) + " \""  + paragraph + "\"") );
+		text.getChild().forEach(paragraph->logger.info("PARAGRAH_ID=" + String.valueOf(++paragraphId[0]) + " \""  + paragraph + "\""));
 		
 
 		//print sentence
 		logger.info("***********************************************   SENTENCES  *******************************************");
-		text.getChild().forEach(paragraph->{paragraph.getChild()
-			           .forEach(sentence->{logger.info("SENTENCE_ID=" + String.valueOf(++sentence_id[0]) + " \""  + sentence + "\"") ;});;});
+		text.getChild().forEach(paragraph->paragraph.getChild()
+			           .forEach(sentence->logger.info("SENTENCE_ID=" + String.valueOf(++sentenceId[0]) + " \""  + sentence + "\"")));
 		
 		
 		//print lexeme
-		paragraph_id[0] = 0;
-		sentence_id[0] = 0;
+		paragraphId[0] = 0;
+		sentenceId[0] = 0;
 		
 		logger.info("************************************************   LEXEMES  *******************************************");
-		text.getChild().forEach(paragraph->{paragraph_id[0]++; paragraph.getChild()
-			           .forEach(sentence->{sentence_id[0]++; sentence.getChild()
-			           .forEach(lexeme->{logger.info("Paragraph_id=" + String.valueOf(paragraph_id[0]) +
-			        		                         ", Sentence_id=" + String.valueOf(sentence_id[0]) +  
-			        		                         ", Lexeme_id=" + String.valueOf(++lexeme_id[0]) +": \"" 
+		text.getChild().forEach(paragraph->{paragraphId[0]++; paragraph.getChild()
+			           .forEach(sentence->{sentenceId[0]++; sentence.getChild()
+			           .forEach(lexeme->logger.info( "Paragraph_id=" + String.valueOf(paragraphId[0]) +
+			        		                         ", Sentence_id=" + String.valueOf(sentenceId[0]) +  
+			        		                         ", Lexeme_id=" + String.valueOf(++lexemeId[0]) +": \"" 
 			        		                                        + lexeme + "\"" 
-			        		                                        + " [" +  ((Lexeme)lexeme).getWord() + "]" ) ;});});;});
+			        		                                        + " [" +  ((Lexeme)lexeme).getWord() + "]" ));});});
 	
 		
 		
@@ -63,10 +63,10 @@ public class Main {
 		logger.info("***************************   SENTENCE WITH WORD COUNT (REAL SENTENCES)  *********************************");
 		logger.info(Action.sentenceWithWordCount(text));
 		
-		sentence_id[0] = 0;
+		sentenceId[0] = 0;
 		logger.info("***************************   SENTENCE WITH WORD (REAL SENTENCES)  ***************************************");
 		text.getChild().forEach(paragraph->{paragraph.getChild()
-			           .forEach(sentence->{if (Action.wordCount((CompositeText)sentence) > 0) logger.info("SENTENCE_ID=" + String.valueOf(++sentence_id[0]) + " \""  + sentence + "\""); ;});;});
+			           .forEach(sentence->{if (Action.wordCount((CompositeText)sentence) > 0) logger.info("SENTENCE_ID=" + String.valueOf(++sentenceId[0]) + " \""  + sentence + "\""); ;});;});
 		
 	}
 }
