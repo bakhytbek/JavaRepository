@@ -84,12 +84,12 @@ create or replace package body pkg_account is
      where f.account_id = in_account_id;              
     
 
-    --commit on both side if everything is OK
+    --commit and unlock rows on both side if everything is OK
     commit;
     
     exception 
       when others then
-        --unlock rows and rollback on both side if something is wrong
+        --rollback and unlock rows on both side if something is wrong
         rollback;
         raise;  
   end;       
