@@ -1,7 +1,7 @@
 connect db@orcl12
 
 -----------------------------------
---ORCL12---------------------------
+--ORCL12 (SENDER SIDE)-------------
 -----------------------------------
 create table ACCOUNT_TO (account_id int primary key, balance number(12,2) not null);
 
@@ -10,7 +10,7 @@ create table ACCOUNT_TO (account_id int primary key, balance number(12,2) not nu
 
 connect db@orcl10
 -----------------------------------
---ORCL10---------------------------
+--ORCL10 (RECEIVER SIDE)-----------
 -----------------------------------
 
 create database link TO_ORCL12 connect to DB identified by "1" using 'EPBYMINW6854:1521/ORCL';
@@ -50,7 +50,7 @@ create or replace package body pkg_account is
          raise_application_error(-20001, 'Can not find account_id = "'||in_account_id||'" on sender side.');
      end;   
       
-    --lets check balance  
+    --lets check balance on sender side  
     if (v_balance < in_amount)  then
       raise_application_error(-20002, 'Not enough balance on account_id = "'||in_account_id||'" on sender side.');
     end if;             
@@ -69,20 +69,27 @@ create or replace package body pkg_account is
     end;   
 
     --Transfer balance
+    --
+    --decrease balance on sender side
+    --
     update db.account_from f  
        set f.balance = f.balance - in_amount 
      where f.account_id = in_account_id;              
 
+
+	--increase balance on receiver side
+	--
     update db.account_to@to_orcl12 f  
        set f.balance = f.balance + in_amount 
      where f.account_id = in_account_id;              
     
+
     --commit on both side if everything is OK
     commit;
     
     exception 
       when others then
-        --unlock rows and rollback if something is wrong
+        --unlock rows and rollback on both side if something is wrong
         rollback;
         raise;  
   end;       
