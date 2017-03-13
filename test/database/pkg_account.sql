@@ -1,3 +1,24 @@
+connect db@orcl12
+
+-----------------------------------
+--ORCL12---------------------------
+-----------------------------------
+create table ACCOUNT_TO (account_id int primary key, balance number(12,2) not null);
+
+
+
+
+connect db@orcl10
+-----------------------------------
+--ORCL10---------------------------
+-----------------------------------
+
+create database link TO_ORCL12 connect to DB identified by "1" using 'EPBYMINW6854:1521/ORCL'
+
+
+create table ACCOUNT_FROM (account_id int primary key, balance number(12,2) not null);
+
+
 create or replace package pkg_account is
 
   -- Author  : 
@@ -12,9 +33,6 @@ end pkg_account;
 
 
 create or replace package body pkg_account is
-
-  --create table ACCOUNT_FROM (account_id int primary key, balance number(12,2) not null);
-  --create table ACCOUNT_TO@orcl12 (account_id int primary key, balance number(12,2) not null);
 
   procedure transfer_balance(in_account_id int, in_amount number)
   is
