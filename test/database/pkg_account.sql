@@ -1,18 +1,18 @@
+-----------------------------------
+--ORCL12 (RECEIVER SIDE)-----------
+-----------------------------------
 connect db@orcl12
-
------------------------------------
---ORCL12 (SENDER SIDE)-------------
------------------------------------
 create table ACCOUNT_TO (account_id int primary key, balance number(12,2) not null);
 
 
 
 
+-----------------------------------
+--ORCL10 (SENDER SIDE)-------------
+-----------------------------------
 connect db@orcl10
------------------------------------
---ORCL10 (RECEIVER SIDE)-----------
------------------------------------
 
+--db link to receiver side
 create database link TO_ORCL12 connect to DB identified by "1" using 'EPBYMINW6854:1521/ORCL';
 
 
@@ -75,10 +75,10 @@ create or replace package body pkg_account is
     update db.account_from f  
        set f.balance = f.balance - in_amount 
      where f.account_id = in_account_id;              
-
-
-	--increase balance on receiver side
-	--
+     
+    
+    --increase balance on receiver side
+    --
     update db.account_to@to_orcl12 f  
        set f.balance = f.balance + in_amount 
      where f.account_id = in_account_id;              
