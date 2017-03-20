@@ -54,7 +54,6 @@ public class Main {
 		System.out.println("-----------------------------------------------------------------");
 		System.out.println("-------------------- Brokers balance ----------------------------");
 		System.out.println("-----------------------------------------------------------------");
-		Collections.sort(brokers);
 		for (int i = 0; i < brokers.size(); i++) {
 			System.out.println((i+1) + "." + brokers.get(i).getName() + ", balance = " + brokers.get(i).getBalans());
 		}
@@ -84,6 +83,7 @@ public class Main {
 		System.out.println("-----------------------------------------------------------------");
 		System.out.println("-------------------- Brokers balance ----------------------------");
 		System.out.println("-----------------------------------------------------------------");
+		
 		Collections.sort(brokers);
 		for (int i = 0; i < brokers.size(); i++) {
 			System.out.println((i+1) + "." + brokers.get(i).getName() + ", balance = " + brokers.get(i).getBalans());
