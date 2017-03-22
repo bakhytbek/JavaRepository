@@ -87,13 +87,15 @@ public class Stock {
 		Comparator<String> byName = Comparator.comparing(String::toLowerCase);
 		Comparator<String> orderBy = byLength.thenComparing(byName);
 
-		return Collections.unmodifiableMap(shares.keySet()
-												 .stream()
-												 .sorted(orderBy)
-												 .collect(Collectors.toMap(v -> v.toString(),
-														 				   v -> Setting.round(getPrice(v.toString()), 2),
-														 				   (v1,v2) ->{ throw new RuntimeException(String.format("Duplicate key for values %s and %s", v1, v2));},
-														 				   LinkedHashMap::new)));
+		return Collections.unmodifiableMap(shares
+				.keySet()
+				.stream()
+				.sorted(orderBy)
+				.collect(Collectors.toMap(
+						v -> v.toString(),
+						v -> Setting.round(getPrice(v.toString()), 2),
+						(v1,v2) ->{ throw new RuntimeException(String.format("Duplicate key for values %s and %s", v1, v2));},
+						LinkedHashMap::new)));
 	}
 	
 
@@ -102,13 +104,15 @@ public class Stock {
 		Comparator<String> byName = Comparator.comparing(String::toLowerCase);
 		Comparator<String> orderBy = byLength.thenComparing(byName);
 
-		return Collections.unmodifiableMap(shares.keySet()
-												 .stream()
-												 .sorted(orderBy)
-												 .collect(Collectors.toMap(v -> v.toString(),
-														 				   v -> Setting.round(getDiscount(v.toString()), 4),
-														 				   (v1,v2) ->{ throw new RuntimeException(String.format("Duplicate key for values %s and %s", v1, v2));},
-														 				   LinkedHashMap::new)));
+		return Collections.unmodifiableMap(shares
+				.keySet()
+				.stream()
+				.sorted(orderBy)
+				.collect(Collectors.toMap(
+						v -> v.toString(),
+						v -> Setting.round(getDiscount(v.toString()), 4),
+						(v1,v2) ->{ throw new RuntimeException(String.format("Duplicate key for values %s and %s", v1, v2));},
+						LinkedHashMap::new)));
 
 	}
 	
